@@ -1,0 +1,253 @@
+body {
+    margin: 0px 0px;
+    padding: 0px;
+    /* background-image: url('https://i.pinimg.com/originals/43/98/a7/4398a7f50c59f87e66e9703d30ee25f5.jpg') center center/cover; */
+}
+
+h1::before {
+    background: url('https://images.ctfassets.net/usf1vwtuqyxm/5DIhpKUsxSjdNUnosbvqy7/ded32d8c59c7338083b444ca73872a8c/hogwarts-legacy-desktop.jpg?fm=jpg&q=70&w=2560') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30vh 0rem;
+}
+
+h1 {
+    text-align: center;
+    box-shadow: 0px 0px 1rem 0.4rem rgba(255, 255, 255, 0.34);
+    text-shadow: 0px 0px 2rem white;
+    background-image: radial-gradient(rgba(255, 252, 252, 0.721), rgba(255, 255, 255, 0.365), rgba(255, 255, 255, 0.137));
+    /* margin: 13rem 35%; */
+    padding: 0%;
+    font-size: 2.2vw;
+}
+
+/* .box {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    margin-left: 25vw; 
+    
+    animation: twinky 2s linear 0s infinite forwards ;
+}
+
+@keyframes twinky {
+
+    0% {
+        transform: rotate(0deg);
+        translate: 25vw;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        translate: 35vw;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        translate: 50vw;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        translate: 65vw;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        translate: 75vw;
+    }
+} */
+
+#image1 {
+    position: absolute;
+    background-color: none;
+    right: 0vw;
+    top: 10vh;
+    width: 20vw;
+    animation-name: lan;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    transition-duration: 4s;
+}
+
+@keyframes lan {
+    0% {
+        transform: translateY(0.95rem);
+    }
+
+    50% {
+        transform: translateY(-0.95rem);
+    }
+
+    100% {
+        transform: translateY(0.95rem);
+    }
+}
+
+#image2 {
+    position: absolute;
+    background-color: none;
+    left: 0vw;
+    top: 10vh;
+    width:20vw;
+    animation-name: lan;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    transition-duration: 4s;
+
+}
+
+@keyframes lan {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#image3 {
+    position: absolute;
+    background-color: none;
+    right: 7.5vw;
+    top: 25vh;
+    width:20vw;
+    animation-name: lan;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    transition-duration: 4s;
+}
+
+@keyframes lan {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#image4 {
+    position: absolute;
+    background-color: none;
+    left: 6vw;
+    top: 25vh;
+    width: 20vw;
+    animation-name: lan;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    transition-duration: 4s;
+}
+
+@keyframes lan {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+#flyimage1 {
+    width: 15vw;
+    position: absolute;
+    left: 0%;
+    bottom: 35%;
+    animation: fly 5s linear 0s infinite none;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    20% {
+        transform: translate(17vw, 3vh);
+    }
+
+    40% {
+        transform: translate(34vw, 8vh);
+    }
+
+    60% {
+        transform: translate(51vw, 4vh);
+    }
+
+    80% {
+        transform: translate(68vw, -5vh);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translate(85vw, -10vh);
+        opacity: 0.1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box button{
+    border: 0.1rem solid rgb(238, 143, 167);
+    width: 20vw;
+    text-align: center;
+    margin: 1vh 4vw;
+    padding: 0.3rem;
+    background-color: rgba(237, 75, 118, 0.295);
+    border-radius: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+
+.box button:hover{
+    display: block;
+    border:0.1rem solid  transparent ;
+    text-shadow: 0px, 0px, 15rem, white;
+    background-image: radial-gradient(white ,rgba(243, 131, 157, 0.687), rgba(245, 57, 129, 0.495));
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 0px 12rem black;
+    color: black;
+    
+}
